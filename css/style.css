@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(0.7turn, #3f87a6, #628E75);
+}
+
+header{
+    height: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 182px;
+    width: 70%;
+}
+
+.contatos ul{
+    display: flex;
+}
+
+.contatos ul li{
+    padding: 14.5px;
+    transition: 0.3s;
+}
+.contatos ul li:hover{
+    position: relative;
+    bottom: 1px;
+    
+}
+
+.particion1{
+    height: 568px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinhar{
+    height: 568px;
+    color: white;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-left: 10px;
+    padding: 7.5px 0px;
+}
+.titulo h3{
+    font-size: 28px;
+}
+
+.marca{
+    font-size: 40px;
+    font-weight: 400px;
+    padding: 7.5px 0px;
+}
+.texto{
+    padding: 17.5px 0px;
+}
+.texto p{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.botoes{
+    padding: 28.5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.botoes button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    width: 225px;
+    height: 45px;
+    transform: skew(20deg);
+    color: #fff;
+    font-size: 16px;
+
+}
+.button1{
+    transition: 0.3s;
+    margin-right: 10px;
+    border: none;
+    background-color: #658E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button1 p{
+    margin-left: 5px;
+}
+
+.button1 p, .button1 img, .button2 p, .button2 img{
+    transform: skew(-10deg);
+}
+
+.button2{
+    transition: 0.3s;
+    border: solid #658E76;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1:hover, .button2:hover{
+    transform: scale(1.03);
+}
+
+.particion2{
+    width: 50%;
+}
+
+.divisao{
+    display: flex;
+}
+
+
+@media ( max-width: 980px ) {
+    body{
+        overflow-x:  hidden;
+    }
+
+    .container{
+        width: calc(100% - 80px);
+    }
+
+    .container .logo{
+        margin-bottom: 20px;
+    }
+
+    .contatos ul li{
+        padding: 8px;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 40px);
+    }
+
+    .divisao{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .particion1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alinhar{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    .titulo h3{
+        margin-left: 0px;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .marca{
+        margin-left: 5px;
+        font-weight: 900px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .texto p{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .particion2{
+        margin-right: 170px;
+    }
+
+    #imagecenter{
+        height: 338.4px;
+        width: 348px;
+    }
+
+    .button1, .button2{
+        width: 150px;
+        transform: skew(20deg);
+    }
+}
